@@ -66,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
   },
   header__iconBox: {
     position: "relative",
+    cursor: "pointer",
   },
 }));
 

@@ -22,10 +22,13 @@ const Content = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
+        style={{
+          ...style,
+        }}
         onClick={onClick}
-      />
+      >
+        <KeyboardArrowRightIcon className={classes.arrow} />
+      </div>
     );
   }
 
@@ -33,17 +36,21 @@ const Content = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
-        style={{ ...style, display: "block", background: "green" }}
+        style={{
+          ...style,
+        }}
         onClick={onClick}
-      />
+      >
+        <KeyboardArrowLeftIcon className={classes.arrow} />
+      </div>
     );
   }
 
   const settings = {
     className: "center",
-    centerMode: true,
-    infinite: true,
+    // centerMode: true,
+    edgeFriction: 1,
+    infinite: false,
     centerPadding: "60px",
     slidesToShow: 4,
     speed: 500,
@@ -87,10 +94,6 @@ const Content = () => {
           </Button>
         </div>
       </Slider>
-      <div className={classes.arrows}>
-        <KeyboardArrowLeftIcon className={classes.arrow} />
-        <KeyboardArrowRightIcon className={classes.arrow} />
-      </div>
     </div>
   );
 };

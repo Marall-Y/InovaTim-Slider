@@ -2,21 +2,22 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   content: {
-    padding: "2rem 0 1.5rem 2rem",
+    padding: "2rem 0",
     borderRadius: "1rem",
     backgroundColor: "#FFFFFF",
     margin: "1.5rem",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)",
   },
   heading: {
-    marginBottom: "3rem",
+    margin: " 0 0 3rem 3rem",
     color: "#024D81",
     fontSize: "1.1rem",
     // fontWeight: "400",
   },
   slider: {
-    width: "95%",
-    marginBottom: "2rem",
+    width: "90%",
+    margin: "0 auto",
+    display: "flex",
   },
   root: {
     maxWidth: "13rem",
@@ -34,6 +35,8 @@ const useStyles = makeStyles((theme) => ({
   arrow: {
     color: "#D2D2D2",
     fontSize: "3rem",
+    cursor: "pointer",
+    marginTop: "8.27rem",
   },
   image: {
     width: "100%",
